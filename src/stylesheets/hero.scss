@@ -1,0 +1,32 @@
+#hero {
+    background-color: rgb(226, 212, 190);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.landing_message {
+    #title {
+        font-size: 25px;
+        color: black;
+    }
+}
+
+@keyframes example {
+    0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 10px;
+      }
+  }
+#arrow_down {
+    position: absolute;
+    margin-top: 15%;
+    padding-bottom: 30px;
+    animation: example 1s linear infinite;
+}
+
