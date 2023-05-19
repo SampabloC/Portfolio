@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const HeaderItem = ({ goTo, text, itemClass, isOpen }) => {
   return (
-    <>
+    <li>
       <Link
         className={itemClass}
         duration={500}
@@ -17,7 +17,7 @@ const HeaderItem = ({ goTo, text, itemClass, isOpen }) => {
       >
         {text}
       </Link>
-    </>
+    </li>
   );
 };
 

@@ -1,35 +1,41 @@
 import { React } from "react";
 import HeaderItem from "./Headeritem";
-import '../../stylesheets/navbar.css'
+import '../../stylesheets/navbar.scss'
 
 const Navbar = () => {
     return (
-        <section className="navbar">
-            <HeaderItem
-                goTo="hero"
-                text="Home"
-                
-            />
+        <div id='menuToggle' className='navbar'>
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            <section id='navbar_items'>
+                <HeaderItem
+                    goTo="hero"
+                    text="Home"
+                    
+                />
 
-            <HeaderItem
-                goTo="profile"
-                text="About Me"
-                
-            />
+                <HeaderItem
+                    goTo="profile"
+                    text="About Me"
+                    
+                />
 
-            <HeaderItem
-                goTo="projects"
-                text="My Work"
-                
-            />
+                <HeaderItem
+                    goTo="projects"
+                    text="My Work"
+                    
+                />
 
-            <HeaderItem
-                goTo="contact"
-                text="Contact"
+                <HeaderItem
+                    goTo="contact"
+                    text="Contact"
+                    
+                />
                 
-            />
-            
-        </section>
+            </section>
+        </div>
     );
 };
 

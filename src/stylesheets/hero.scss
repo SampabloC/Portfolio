@@ -1,11 +1,9 @@
 #hero {
-    background-color: rgb(226, 212, 190);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .landing_message {
@@ -15,18 +13,18 @@
     }
 }
 
-@keyframes example {
+@keyframes UpDown {
     0%, 100% {
-        bottom: 0;
+        margin-top: 12%;
       }
       50% {
-        bottom: 10px;
+        margin-top: 13%;
       }
-  }
+}
+
 #arrow_down {
     position: absolute;
-    margin-top: 15%;
     padding-bottom: 30px;
-    animation: example 1s linear infinite;
+    animation: UpDown 1s linear infinite;
 }
 
