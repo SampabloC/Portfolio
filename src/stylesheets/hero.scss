@@ -1,3 +1,5 @@
+@import "helpers/screen_sizes.scss";
+
 #hero {
     height: 100vh;
     display: flex;
@@ -7,6 +9,13 @@
 }
 
 .landing_message {
+    width: 50%;
+    padding-bottom: 150px;
+
+    @media (min-width: $breakpoint-desktop) {
+        width: auto;
+        padding-bottom: 0;
+    }
     #title {
         font-size: 25px;
         color: black;

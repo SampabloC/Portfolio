@@ -1,8 +1,10 @@
+@import "stylesheets/helpers/colors.scss";
+
 body {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
-    background-color: #F2ECE3;
+    background-image: linear-gradient($top-body, $low-body);
 }
 
 

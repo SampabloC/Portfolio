@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero';
 import Contact from './components/Contact';

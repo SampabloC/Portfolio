@@ -1,3 +1,6 @@
+@import "helpers/colors.scss";
+@import "helpers/screen_sizes.scss";
+
 #menuToggle {
   display: flex;
   flex-direction: column;
@@ -35,16 +38,12 @@
     }
 
     &:checked ~ #navbar_items {
-      width: 100vmax;
-      height: 100vmax;
       transform: none;
-      background-color: aqua;
+      background-color: $sidebar;
     }
 
     &:not(checked) ~ #navbar_items {
-      width: 100vmax;
-      height: 100vmax;
-      background-color: aqua;
+      background-color: $sidebar;
     }
   }
 
@@ -76,21 +75,20 @@
 
   a {
     text-decoration: none;
-    color: #232323;
+    color: white;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #947EB0;
-    }
-
-    &:active {
-      color: yellow;
+      cursor: pointer;
+      color: rgba(237, 233, 219, 0.793);
     }
   }
 }
 
 #navbar_items {
-  width: 95%;
+  border-radius: 0 0 35px 0;
+  opacity: 0.8;
+  
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -109,5 +107,9 @@
     justify-content: center;
   } 
   
+  @media (min-width: $breakpoint-desktop) {
+    width: 50vh;
+    height: 50vh;
+  }
 }
 
