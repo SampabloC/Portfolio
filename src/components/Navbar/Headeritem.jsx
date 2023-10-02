@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-scroll";
 
 const HeaderItem = ({ goTo, text, itemClass, isOpen }) => {
+  const closeNavbar = (isOpen) => {
+    if(isOpen) {
+      document.getElementById("menu_checkbox").checked = false;
+    }
+  }
   return (
     <li>
       <Link
@@ -12,7 +17,7 @@ const HeaderItem = ({ goTo, text, itemClass, isOpen }) => {
         spy={true}
         to={goTo}
         onClick={() => {
-          isOpen();
+          closeNavbar(isOpen);
         }}
       >
         {text}
