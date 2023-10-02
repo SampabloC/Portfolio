@@ -1,4 +1,5 @@
 @import "helpers/screen_sizes.scss";
+@import "helpers/colors.scss";
 
 #hero {
     height: 100vh;
@@ -8,32 +9,57 @@
     flex-direction: column;
 }
 
-.landing_message {
-    width: 50%;
-    padding-bottom: 150px;
+.title {
+    color: $text-color;
+    font-size: 35px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    p {
+        margin: 3vmin;
+    }
     @media (min-width: $breakpoint-desktop) {
         width: auto;
         padding-bottom: 0;
     }
-    #title {
-        font-size: 25px;
-        color: black;
+    #name {
+        color: $secondary-color;
     }
+}
+
+.landing_message {
+    color: $text-color;
+    margin-top: 30vmin;
+    font-size: 17px;
+    width: 70%;
+
+}
+
+.icons_section {
+    img {
+        height: 70px;
+        width: 80px;
+    }
+    display: flex;
+    justify-content: space-around;
+
 }
 
 @keyframes UpDown {
     0%, 100% {
-        margin-top: 12%;
+        margin-top: 20%;
       }
       50% {
-        margin-top: 13%;
+        margin-top: 25%;
       }
 }
 
 #arrow_down {
+    color: $secondary-color;
     position: absolute;
-    padding-bottom: 30px;
     animation: UpDown 1s linear infinite;
 }
 
