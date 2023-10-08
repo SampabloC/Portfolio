@@ -1,3 +1,47 @@
+@import './helpers/colors.scss';
+@import './helpers/screen_sizes.scss';
+
 #profile {
-    height: 100vmax;
+    background-color: $background-color;
+    height: 100vh;
+    padding-top: 10vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $text-color;
+
+    .title {
+        color: $secondary-color;
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .about_me {
+        width: 70%;
+        font-size: 18px;
+        font-weight: 100;
+        margin: 10vmin 0 10vmin 0;
+        text-align: justify;
+        text-justify: inter-character;
+    }
+
+    .resume {
+        font-size: 18px;
+        margin: 10vmin 0 10vmin 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        
+        button {
+            color: $background-color;
+            background-color: $secondary-color;
+            border: none;
+            border-radius: 90px 45px 90px 45px;
+            margin-top: 15px;
+            height: 30px;
+            width: auto; 
+        }
+    }
+
 }
